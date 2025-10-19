@@ -1,33 +1,49 @@
-# Insurance-Charges-Analysis-Prediction
-Analyze factors influencing medical insurance charges and predict costs for individuals based on features like age, BMI, sex, smoking status, children, and region.
-Key Tasks Performed:
-Data Exploration & Visualization:
+🩺 Insurance Charges Analysis & Prediction
 
-Used scatter and box plots to study how age, BMI, sex, and smoking affect medical charges.
+A machine learning project to analyze and predict medical insurance charges using patient demographic and lifestyle data. The project uses Linear Regression and exploratory data analysis to uncover key cost drivers such as smoking status, BMI, and age.
 
-Findings:
+📊 Overview
 
-Smoking is the most significant cost driver — smokers incur much higher charges.
+📁 Dataset: 1,338 patient records (insurance.csv)
 
-Age and BMI show positive correlation with charges.
+🎯 Goal: Predict charges based on patient features
 
-Sex has minimal impact on average charges.
+🧠 Model: Linear Regression (R² ≈ 0.865)
 
-Model Building:
+🔍 Key Findings: Smoking, BMI, and age significantly impact insurance costs
 
-Built a Linear Regression model using scikit-learn.
+⚙️ Workflow
 
-Applied OneHotEncoding to handle categorical variables (sex, smoker, region).
+Data Analysis: Cleaned and explored 1,300+ records.
 
-Trained the model on 1338 samples from insurance.csv.
+Visualization: Scatter plots, box plots, and heatmaps revealed strong correlations.
 
-Cost Prediction Example:
+Modeling: Built and evaluated Linear Regression and regularized models.
 
-Input: Age 28, Male, BMI 33.0, 3 Children, Non-Smoker, Southeast Region
+Insights: Smoking alone increases charges by ~23,000+, with BMI and age as major contributors.
 
-Predicted Insurance Cost: ₹6,707
+📈 Results
+Model	R² Score
+Linear Regression	0.865
+Ridge Regression	0.865
+Lasso Regression	0.849
 
-🛠️ Tools Used:
-Python (Pandas, Matplotlib, Seaborn, scikit-learn)
+✅ Linear Regression explains ~86% of the variance in insurance charges.
 
-Dataset: insurance.csv (1338 rows, 7 features) [kaggle link:https://www.kaggle.com/datasets/mirichoi0218/insurance]
+📊 Sample Visualizations
+
+Charges vs Age: Older patients → higher charges
+
+Charges by Smoking: Smokers → significantly higher charges
+
+Charges vs BMI: Higher BMI, especially with smoking, increases cost
+
+🛠️ Tech Stack
+
+Python, pandas, numpy
+
+matplotlib, seaborn
+
+scikit-learn
+
+Jupyter Notebook
